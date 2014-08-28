@@ -1359,7 +1359,7 @@ begin
   S := ADecoder.DecodeString(TrimRight(TIdReplyIMAP4(AClient.LastCmdResult).Extra.Text));
   S := ASASL.StartAuthenticate(S, AClient.Host, IdGSKSSN_imap);
   AClient.IOHandler.WriteLn(AEncoder.Encode(S));
-  AClient.GetInternalResponse('', [], True);
+  AClient.GetInternalResponse(AClient.LastCmdCounter, [''], False);
   if CheckStrFail(AClient.LastCmdResult.Code, AOkReplies, AContinueReplies) then
   begin
     ASASL.FinishAuthenticate;
