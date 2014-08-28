@@ -12,3 +12,7 @@ In order to run the sample project, you need
 to enter your Google OAuth2 credentials. See 
 https://developers.google.com/accounts/docs/OAuth2Login#getcredentials
 for details.
+
+## License
+
+Licensed under the Apache 2.0 license, see LICENSE file for details.
