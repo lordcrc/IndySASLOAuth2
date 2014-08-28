@@ -1,4 +1,4 @@
 IndySASLOAuth2
 ==============
 
-OAuth2 SASL authenticator for Indy
+Simple OAuth2 SASL authenticator for Indy
